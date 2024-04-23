@@ -1,0 +1,47 @@
+@layer components {
+  .container {
+    @apply bg-custom-green w-full h-screen grid place-items-center;
+  }
+  .child {
+    @apply bg-white h-2/4 w-3/5 p-12 grid grid-cols-2 rounded-3xl gap-x-6;
+  }
+  .tips {
+    @apply grid grid-cols-3 grid-rows-2 gap-y-5 mb-6;
+  }
+  .title {
+    @apply text-base font-mono text-custom-bill-green mb-1;
+  }
+  .billInput {
+    @apply border border-custom-input-field-green w-full h-5/6 rounded bg-custom-input-field-green p-3 mb-6;
+  }
+  .tip-button {
+    @apply bg-custom-tip-percent-button w-11/12 h-auto p-2 rounded-md text-white font-semibold text-lg;
+  }
+  .summary {
+    @apply bg-custom-tip-percent-button h-21rem rounded-3xl p-8;
+  }
+  .summary-details {
+    @apply text-white font-semibold font-mono leading-relaxed text-lg;
+  }
+  .details-container {
+    @apply grid grid-cols-2;
+  }
+  .per-person {
+    @apply text-custom-per-person text-xs mb-8;
+  }
+  .tip-amount {
+    @apply text-custom-amount-color font-bold font-mono text-3xl pl-2;
+  }
+  .reset {
+    @apply bg-active-button-custom-color border-active-button-custom-color h-1/5 w-11/12 text-reset-text-color font-bold border rounded-md mt-7;
+  }
+  .error-handling {
+    @apply grid grid-cols-2;
+  }
+  .error-text {
+    @apply text-red-600 text-xs pl-14;
+  }
+  .custom-tip-input {
+    @apply bg-active-button-custom-color w-11/12 h-auto p-3 rounded-md text-sm font-normal text-reset-text-color;
+  }
+}
